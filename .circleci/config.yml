@@ -36,7 +36,7 @@ jobs:
           keys:
             - "npm-packages"
       - run: npm install
-      - run: npm audit fix
+      - run: npm audit fix --force
       - run: npm audit
 
 
