@@ -37,6 +37,9 @@ jobs:
             - "npm-packages"
       - run: npm install
       - run: npm audit fix --force
+      - run: npm update postcss --depth 2
+      - run: npm update mkdirp --depth 5
+      - run: npm update ansi-regex --depth 5 
       - run: npm audit
 
 
