@@ -41,6 +41,8 @@ jobs:
       - run: npm update mkdirp --depth 5
       - run: npm update ansi-regex --depth 5 
       - run: npm update loader-utils --depth 2
+      - run: npm update ansi-regex --depth 5
+      - run: npm update coveralls
       - run: npm audit 
 
 
