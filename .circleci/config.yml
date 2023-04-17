@@ -42,7 +42,6 @@ jobs:
       - run: npm update ansi-regex --depth 5 
       - run: npm update loader-utils --depth 2
       - run: npm update ansi-regex --depth 5
-      - run: npm update -g coveralls 
       - run: npm update -g ajv --depth 4
       - run: npm update -g eslint 
       - run: npm update -g request --depth 2
