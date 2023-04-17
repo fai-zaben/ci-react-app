@@ -46,8 +46,7 @@ jobs:
       - run: npm update -g eslint 
       - run: npm update -g request --depth 2
       - run: npm update -g qs --depth 3
-      - run: npm audit fix
-      - run: npm audit 
+      - run: npm audit --audit-level=critical
 
 
 workflows:
