@@ -35,7 +35,7 @@ jobs:
       - restore_cache:
           keys:
             - "npm-packages"
-      - run: npm install
+      - run: npm install # some packages needed update. and other packages needed review (update version from package.json file)
       - run: npm audit fix --force
       - run: npm update postcss --depth 2
       - run: npm update mkdirp --depth 5
@@ -46,6 +46,7 @@ jobs:
       - run: npm update -g eslint 
       - run: npm update -g request --depth 2
       - run: npm update -g qs --depth 3
+      - run: npm audit fix
       - run: npm audit 
 
 
