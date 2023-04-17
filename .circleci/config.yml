@@ -43,6 +43,10 @@ jobs:
       - run: npm update loader-utils --depth 2
       - run: npm update ansi-regex --depth 5
       - run: npm update -g coveralls
+      - run: npm update -g ajv
+      - run: npm update -g eslint
+      - run: npm update -g request
+      - run: npm update -g qs
       - run: npm audit 
 
 
